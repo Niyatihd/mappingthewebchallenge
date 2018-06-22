@@ -1,7 +1,7 @@
 /* TEST */
-#map {
+/* #map {
     color:blue;
-}
+} */
 /* END TEST */
 
 /* remove default margin and padding from body */
@@ -18,15 +18,34 @@ body {
   }
   
 
-.legend  {
-       line-height:  18px;
-       color:  #555;
-}; 
 
- .legend i  {
-        width:  18px;
-        height:  18px;
-        float: left;
-        margin-right: 8px;
-        opacity:  0.7;
-}; 
+.legend {
+    padding: 8px;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:black;
+    /* background: #fff; */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 70px;
+    height: 120px;
+    opacity: 0.7;
+  }
+  
+  .legend ul {
+    padding:0;
+    margin: 0; 
+    /* clear: both; */
+    /* list-style-type: none; */
+  }
+  
+  .legend li {
+    display: inline-block;
+    width:  18px;
+    height:  18px;
+    /* float: left; */
+    margin-right: 9px;
+    opacity:  1;
+    /* -webkit-print-color-adjust: exact; */
+  }
